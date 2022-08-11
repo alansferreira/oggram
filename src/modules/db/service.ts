@@ -1,7 +1,5 @@
+import '../dotenv'
 import { MongoClient } from 'mongodb'
-import { config } from 'dotenv'
-
-config({ override: false })
 
 const { MONGODB_URI } = process.env
 

@@ -1,10 +1,9 @@
+import './modules/dotenv'
+
 import { setup } from './server'
 import { red, yellow } from 'colors'
 import { packageJson } from './modules/manifest'
 import { client } from './modules/db'
-import { config } from 'dotenv'
-
-config({ override: false })
 
 const { MONGODB_URI } = process.env
 
