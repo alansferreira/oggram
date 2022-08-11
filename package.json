@@ -25,7 +25,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "cross-env JEST_PROFILE=e2e jest",
     "test:unit": "cross-env JEST_PROFILE=unit jest",
-    "post:release": "git push --follow-tags origin && git push heroku",
+    "postrelease": "git push --follow-tags origin && git push heroku",
     "release": "standard-version",
     "release:alpha": "standard-version --prerelease alpha",
     "prepare": "husky install"
