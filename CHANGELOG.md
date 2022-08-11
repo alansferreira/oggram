@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/alansferreira/oggram/compare/v1.1.0...v1.2.0) (2022-08-11)
+
+
+### Features
+
+* dotenv config ([9f0226e](https://github.com/alansferreira/oggram/commit/9f0226e672a30fdc4f3a30d32a3ca59ee040a0b9))
+
 ## [1.1.0](https://github.com/alansferreira/oggram/compare/v1.0.1...v1.1.0) (2022-08-11)
 
 
