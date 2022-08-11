@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/alansferreira/oggram/compare/v1.2.0...v1.2.1) (2022-08-11)
+
+
+### Bug Fixes
+
+* mongo creds expander ([54b11c3](https://github.com/alansferreira/oggram/commit/54b11c3f1ca5dea725c5d3fcc33390d429db202c))
+
 ## [1.2.0](https://github.com/alansferreira/oggram/compare/v1.1.0...v1.2.0) (2022-08-11)
 
 
