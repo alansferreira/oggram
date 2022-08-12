@@ -1,8 +1,13 @@
 version: '3'
+networks:
+  app-tier:
+    driver: bridge
 
 services:
   mongodb:
     image: bitnami/mongodb:6.0.0
+    networks:
+      - app-tier
     ports:
       - 27017:27017
     environment:

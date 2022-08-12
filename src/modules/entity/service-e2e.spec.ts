@@ -1,8 +1,14 @@
-import '@types/jest'
+import { Entity } from '@alell/oggram-common'
+import { readFileSync } from 'fs'
+import { resolve } from 'path'
 import { generic, groups, users } from '.'
 import { client } from '../db'
 
 describe('Service Entity: Generic store tests', () => {
+  beforeAll(async () => {
+    await client.connect()
+  })
+
   afterAll(() => {
     client.close()
   })

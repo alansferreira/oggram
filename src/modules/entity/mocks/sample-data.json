@@ -1,0 +1,19 @@
+[
+  { "name": "master-org", "type": "group", "owner": "master-user" },
+
+  { "name": "team-one", "type": "group", "owner": "lead-one", "spec": {"memberOf": ["master-org"] }},
+  { "name": "team-two", "type": "group", "owner": "lead-two", "spec": {"memberOf": ["master-org"] }},
+  { "name": "team-tree", "type": "group", "owner": "lead-tree", "spec": {"memberOf": ["master-org"] }},
+  { "name": "team-four", "type": "group", "owner": "lead-four", "spec": {"memberOf": ["master-org"] }},
+
+  { "name": "master-user", "type": "user" },
+  { "name": "lead-one", "type": "user", "spec": {"memberOf": ["team-one"] }},
+  { "name": "lead-two", "type": "user", "spec": {"memberOf": ["team-two"] }},
+  { "name": "lead-tree", "type": "user", "spec": {"memberOf": ["team-tree"] }},
+  { "name": "lead-four", "type": "user", "spec": {"memberOf": ["team-four"] }},
+
+  { "name": "partner-one", "type": "user", "spec": {"memberOf": ["team-one"]  }},
+  { "name": "partner-two", "type": "user", "spec": {"memberOf": ["team-two"]  }},
+  { "name": "partner-tree", "type": "user", "spec": {"memberOf": ["team-tree"]  }},
+  { "name": "partner-four", "type": "user", "spec": {"memberOf": ["team-four"]  }}
+]
