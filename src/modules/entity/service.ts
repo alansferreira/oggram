@@ -1,4 +1,4 @@
-import { Entity, Group, User } from './types'
+import { Entity, Group, User } from '@alell/oggram-common'
 import { db } from '../db'
 
 const _generic = db.collection<Entity<any, any>>('entity')

@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express'
 import { bearerToken } from '../../middlewares/bearer-token'
 import { generic } from './service'
-import { Group } from './types'
+import { Group } from '@alell/oggram-common'
 
 const router = Router()
 

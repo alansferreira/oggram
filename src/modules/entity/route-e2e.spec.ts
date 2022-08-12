@@ -1,7 +1,7 @@
 import { setup } from '../../server'
 import request from 'supertest'
 import { Application } from 'express'
-import { Group } from './types'
+import { Group } from '@alell/oggram-common'
 import { client } from '../db'
 import { generic } from './service'
 
@@ -63,5 +63,4 @@ describe(`Entity route Tests`, () => {
       })
       .catch(done)
   })
-
 })

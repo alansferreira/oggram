@@ -1,3 +1,4 @@
+import '@types/jest'
 import { generic, groups, users } from '.'
 import { client } from '../db'
 
