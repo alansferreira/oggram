@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/alansferreira/oggram/compare/v1.2.4...v2.0.0) (2022-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* change scope to monorepo with yarn
+
+### refact
+
+* change scope to monorepo with yarn ([3a18ab8](https://github.com/alansferreira/oggram/commit/3a18ab87800a3bdfc98ec578f62273d24fda004a))
+
 ### [1.2.4](https://github.com/alansferreira/oggram/compare/v1.2.3...v1.2.4) (2022-08-12)
 
 ### [1.2.3](https://github.com/alansferreira/oggram/compare/v1.2.2...v1.2.3) (2022-08-11)
