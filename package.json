@@ -33,7 +33,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@alell/oggram-common": "1.0.0",
     "@types/express": "^4.17.13",
     "colors": "^1.4.0",
     "cors": "2.8.5",
