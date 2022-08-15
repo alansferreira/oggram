@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express'
 import { bearerToken } from '../../middlewares/bearer-token'
-import { generic } from './service'
+import { buildTree, generic } from './service'
 import { Group } from '@alell/oggram-common'
 
 const router = Router()
@@ -28,15 +28,10 @@ router.delete('/:name', bearerToken, async (req: Request, res: Response) => {
   res.status(findRes ? 200 : 404).json(findRes)
 })
 
-router.get(
-  '/from-names/:names?',
-  bearerToken,
-  async (req: Request, res: Response) => {
-    const names = req.params.names.split(',')
-    const result = generic.find({ name: { $in: names } }).toArray()
-
-    res.json(result)
-  }
-)
+router.get('/tree/:from?', bearerToken, async (req: Request, res: Response) => {
+  const { from } = req.params
+  const result = buildTree(from)
+  res.json(result)
+})
 
 export { router }
